@@ -1,0 +1,58 @@
+# Install and load the package
+install.packages("readxl")
+library(readxl)
+
+# Read the data for the pokemon dataset
+pokemon <- read.csv("E:/path/to/pokemon_dataset.csv")  # Make sure to replace with the correct file path
+str(pokemon)
+
+# Summary of the pokemon dataset
+summary(pokemon)
+
+# Table for the 'Type' column in the pokemon dataset
+table(pokemon$Type)
+
+# Structure of the pokemon dataset
+str(pokemon)
+
+# Viewing the objects in the pokemon dataset
+ls(pokemon)
+
+# Objects with names containing 'a' in the pokemon dataset
+ls(pokemon, pattern = 'a')
+
+# Head function for the pokemon dataset
+head(pokemon)
+
+# Summary for the pokemon dataset
+summary(pokemon)
+
+# Mean of the 'Rating' column in the pokemon dataset
+mean(pokemon$Rating)
+
+# Standard Deviation of the 'Rating' column in the pokemon dataset
+sd(pokemon$Rating)
+
+# Unique values in the 'Reviews' column of the pokemon dataset
+unique(pokemon$Reviews)
+
+# Table for the 'Generes' (assuming it's a column) in the pokemon dataset
+table(pokemon$Generes)  # Make sure to replace with the correct column name
+
+# Median of the 'Rating' column in the pokemon dataset
+median(pokemon$Rating)
+
+# Median of the 'Reviews' column in the pokemon dataset
+median(pokemon$Reviews)
+
+# Names of columns in the pokemon dataset
+names(pokemon)
+
+# Unique values in the 'Rating' column of the pokemon dataset
+unique(pokemon$Rating)
+
+# Scale the 'Rating' column in the pokemon dataset
+scale(pokemon$Rating)
+
+# Sample values from the 'Type' column in the pokemon dataset
+sample(pokemon$Type)
